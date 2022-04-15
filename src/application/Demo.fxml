@@ -10,17 +10,18 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.shape.Ellipse?>
 
+
 <FlowPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FXMLController">
    <children>
       <SplitPane dividerPositions="0.5" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0">
         <items>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <Label fx:id= "myLabel" layoutX="64.0" layoutY="40.0" text="Label" />
+                  <Label fx:id="myLabel" layoutX="64.0" layoutY="40.0" text="Label" />
                </children></AnchorPane>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
                <children>
-                  <Button fx:id="myButton" mnemonicParsing="false" text="Button" />
+                  <Button fx:id="myButton" onAction="#handleSubmitButtonAction" mnemonicParsing="false" text="Button" />
                </children></AnchorPane>
         </items>
       </SplitPane>
